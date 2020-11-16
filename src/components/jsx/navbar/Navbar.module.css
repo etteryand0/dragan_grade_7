@@ -1,3 +1,5 @@
-.menu_toggle {
-  
+nav {
+  width: 40px;
+  height: 100%;
+  background: gray;
 }
