@@ -1,14 +1,54 @@
+/* general */
 .menu_toggle {
   position: absolute;
   top: 15px;
   left: 7px;
   width: 26px;
   height: 14px;
+  cursor: pointer;
+}
+.menu_toggle input {
+  width: 26px;
+  height: 14px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  -webkit-touch-callout: none;
 }
 
-span {
+.hamburger {
   position: absolute;
   width: 26px;
   height: 2px;
   background: #000;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+
+.stick_2 { top: 6px; }
+.stick_3  { top: 12px;}
+
+.stick_2,
+.stick_3 {
+  content: '';
+  transition: 0.5s;
+
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background: #000;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  */
+}
+
+/* animation */
+input[type="checkbox"]:checked ~ nav{
+  background: black;
+}
+.menu_toggle input:checked ~ body {
+  background: white;
+  transition: 1s;
+  transform: translate(150px, 0px);
+}
+.menu_toggle input:checked ~ span {
+  transform: translate(150px, -10px);
 }
