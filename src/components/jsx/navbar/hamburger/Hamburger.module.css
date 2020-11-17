@@ -6,6 +6,7 @@
   width: 26px;
   height: 14px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .menu_toggle input {
   width: 26px;
@@ -21,7 +22,7 @@
   width: 26px;
   height: 2px;
   background: #000;
-  border-radius: 100%;
+  border-radius: 25%;
   transition: 0.5s;
 }
 
@@ -41,14 +42,3 @@
 }
 
 /* animation */
-input[type="checkbox"]:checked ~ nav{
-  background: black;
-}
-.menu_toggle input:checked ~ body {
-  background: white;
-  transition: 1s;
-  transform: translate(150px, 0px);
-}
-.menu_toggle input:checked ~ span {
-  transform: translate(150px, -10px);
-}

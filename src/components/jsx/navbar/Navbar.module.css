@@ -6,4 +6,11 @@ nav {
   z-index: 1;
   position: fixed;
   overflow-x: hidden;
+  transition: 0.7s;
+}
+
+.active {
+  width: 100%;
+  /* background: linear-gradient(90deg, gray 85%, #1C00ff00 15%); */
+  /* transform: ease-in-out; */
 }
